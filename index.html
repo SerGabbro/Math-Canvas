@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <center>
+    <div class="min_div">
+
+        <p class="min_title">FOURIER</p>
+
+        <p class="min_p">Tipo di onda: 
+        <select name="wavetype" id="wavetype">
+            <option value="triangle">Triangolare</option>
+            <option value="square">Quadrata</option>
+            <option value="sawtooth">Dente di sega</option>
+            <option value="weierstrass">Funzione di weierstrass</option>
+        </select>
+
+        </p>
+
+        <br>
+
+        <p class="min_p">Numero di armoniche:
+        <input type="text" id="armonic_number" maxlength=4 class="min_input">
+        </p>
+        
+        <br>
+
+        <p class="min_p">Periodi:
+        <input type="text" id="periods" maxlength=2 class="min_input">
+        </p>
+
+        <br>
+
+        <p class="min_p">Ampiezza (%): 
+        <input type="text" id="amplitude" maxlength=3 class="min_input">
+        </p>
+
+        <br>
+
+        <button onclick="fourier()" class="min_button">Genera</button>
+
+    </div>
+
+    <div class="min_div">
+
+        <p class="min_title">Funzioni non elementari</p>
+
+        <p>Tipico: precisione : 20 e moltiplicatore 0.003</p>
+
+        <br>
+
+        <p class="min_p">Tipo di onda: 
+        <select name="wavetype" id="wavetype_notel">
+            <option value="erf">ERF</option>
+            <option value="si">Seno integrale</option>
+        </select>
+
+        </p>
+
+        <br>
+
+        <p class="min_p">Precisione sommatoria:
+        <input type="text" id="precision_notel">
+        </p>
+        
+        <br>
+
+        <p class="min_p">Moltiplicatore di periodo:
+        <input type="text" id="period_mul_notel">
+        </p>
+
+        <br>
+
+        <p class="min_p">Ampiezza:
+        <input type="text" id="amplitude_notel">
+        </p>
+
+        <br>
+
+        <button onclick="notelementary()">Genera</button>
+
+    </div>
+
+    <br><br>
+
+    <div class="min_div">
+        <canvas id="chart" class="chart"></canvas>
+    </div>
+
+    </center>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+body
+{
+    background: #222222;
+    color: white;
+    font-family: sans-serif;
+}
+
+.min_title
+{
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.min_div
+{
+
+    display: inline-block;
+
+    border: 5px solid white;
+    border-radius: 10px;
+
+    padding: 15px;
+
+    vertical-align: top;
+
+}
+
+.min_input
+{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 3px;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    width: 30px;
+}
+
+.min_button
+{
+    background-color: transparent;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 30px;
+    text-transform: uppercase;
+}
+
+.min_button:hover
+{
+    background-color: #cc0000;
+}
